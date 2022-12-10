@@ -138,3 +138,8 @@ div.fp-slidesNav a span {
 .blog-image {
   text-align: center;
 }
+
+.img-resp {
+  width: 100%;
+  height: auto;
+}
