@@ -16,7 +16,7 @@ h2 {
   text-align: left;
   font-size: 2vw;
   margin-left: 200px;
-  margin-bottom: 10px;
+  margin-bottom: 75px;
 }
 
 h3 {
@@ -130,4 +130,8 @@ div.fp-slidesNav a span {
   color: #fff;
   text-align: left;
   font-size: .90vw;
+}
+
+.blog-image {
+  text-align: center;
 }

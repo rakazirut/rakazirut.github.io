@@ -106,15 +106,15 @@
                     <h2>Overview</h2>
                     <div class="project-overview">
                       <p>
-                          - <strong>Language:</strong> JavaScript, JSON, YAML
+                          <strong>Language:</strong><br>- JavaScript, JSON, YAML
                           <br>
-                          - <strong>Runner:</strong> Cypress Runner
+                          <strong>Runner:</strong><br>- Cypress Runner
                           <br>
-                          - <strong>Source Control:</strong> Git, Github
+                          <strong>Source Control:</strong><br>- Git, Github
                           <br>
-                          - <strong>CI/CD:</strong> Circle-CI
+                          <strong>CI/CD:</strong><br>- Circle-CI
                           <br>
-                          - <strong>Websites under test:</strong> <a href="https://www.saucedemo.com/" target="_blank">https://www.saucedemo.com</a>
+                          <strong>Websites under test:</strong><br>- <a href="https://www.saucedemo.com/" target="_blank">https://www.saucedemo.com</a>
                       </p>
                     </div>
                 </div>
@@ -144,6 +144,79 @@
                         It's also worth noting that this project is very much a work in progress, there is a lot of scope to add new scenarios in the future. 
                         Continued iteration is a healthy part of the development process and I expect I will continue to update the code and this post as time goes on.
                     </p>
+                    <br>
+                    <h3>Getting Started</h3>
+                    <p class="port-blog-body">
+                        <a href="https://docs.cypress.io/guides/getting-started/installing-cypress#System-requirements">Installing Cypress</a> is 
+                        pretty straight forward. I'm using <a href="https://nodejs.org/en/">node.js</a> but opted to use 
+                        <a href="https://yarnpkg.com/">yarn</a> as the package manager versus <a href="https://www.npmjs.com/">npm</a>, 
+                        but there isn't a good reason for that aside from comfort level.
+                        <br><br>
+                        I wanted an XML report to be generated after test run completed, so I could import the results into a 
+                        <a href="https://www.testmo.com/">testmo</a> 
+                        account via their API. Unfortunately, my trial account to testmo has expired but you may still see the remnants 
+                        of the effort throughout the codebase. I felt that having the report generated was still extremely useful, 
+                        so instead I save it as an artifact I can easily reference within circle-ci after a job completes. 
+                        I referenced <a href="https://dzone.com/articles/7-easy-steps-to-generate-xml-and-html-reports-in-cypress">this article</a> 
+                        to get the reporting stood up very easily.
+                    </p>
+                    <br>
+                    <h3>Code</h3>
+                    <p class="port-blog-body">
+                        After installing cypress and other dependencies (that are needed for the aforementioned reporting), 
+                        it was time to get started. I prefer to keep locator values in a separate constants-like file for re-use, 
+                        as well as certain verbiage such as error messaging, things like that. This page object model approach helps 
+                        me and many others to keep the test scripts organized and easy to understand. See below an example of such a 
+                        constant file:<br><br>
+                        <script src="https://gist.github.com/rakazirut/cde3a5ba539aea5e325e2c2bfa3b2438.js"></script>
+                    </p>
+                    <p class="port-blog-body">
+                        From there, I went ahead and added some visual, happy path, and negative scenarios around logging in for the 
+                        SauceDemo webpage. This is just a demo website, so there isn't any network request after attempting to login 
+                        to intercept and verify, otherwise we'd have done that where appropriate.<br><br>
+                        After logging in, the user lands on the product inventory page. I began to add scenarios around this page as well, 
+                        but that is still a work in progress, along with checkout scenarios, etc. Click the Github icon at the bottom of this
+                        page to view the codebase.
+                        <br><br> 
+                        The cypress runner offers the ability to run the test suite in the command line or via GUI. You could use the command 
+                        yarn cypress open or npx cypress open to open the cypress GUI, for example. You can select from the browsers versions 
+                        currently installed on the host machine (Chrome, Edge, Firefox, Electron). See below the login scenarios executing in 
+                        the GUI for Chrome browser.<br><br>
+                        <div class="blog-img">
+                            <img decoding="async" loading="lazy" width="640" height="360" src="https://robertkazirut.com/wp-content/uploads/2022/05/2022-05-07-11-45-33-1.gif">
+                        </div>
+                    </p>
+                    <p class="port-blog-body">
+                        <br>
+                        Included in the codebase is a <a href="https://circleci.com/">circle-ci</a> YAML config to get the automation running 
+                        in a circle-ci CI/CD pipeline on 
+                        developer commits, as well as a daily build running on a scheduled cronjob. Admittedly, the config is pretty simple 
+                        compared to what might be needed for the business needs, but at least gives us some building blocks to work with, as 
+                        well as demonstrates the ability in principle.<br><br>
+                        I have also included a <a href="https://docs.docker.com/compose/">docker-compose</a> YAML config to containerize the 
+                        project. Docker is a set of platform-as-a-service 
+                        products that use OS-level virtualization to deliver software in packages called containers, and docker-compose is one 
+                        flavor of accomplishing the objective of containerizing the project. Assuming docker and docker-compose are installed on 
+                        the host machine, the user can simply provide the command docker-compose up cypress to create the cypress container and run 
+                        the suite in isolation.
+                    </p>
+                    <br>
+                    <h3>Conclusion</h3>
+                    <p class="port-blog-body">
+                        Today, Cypress is a popular choice for web test automation. And I certainly can see why. Installation is straight-forward, 
+                        getting a framework off the ground is easy, community support is incredible and passionate, and if you're organized you can 
+                        get testing scenarios stood up and ready to contribute to maintaining the quality of your application under test fairly 
+                        quickly. Not to mention the excellent 
+                        <a href="https://cypress.io/dashboard/?utm_adgroup=132501526440&amp;utm_keyword=what%20is%20cypress%20dashboard&amp;utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=15312994475&amp;utm_term=what%20is%20cypress%20dashboard&amp;hsa_acc=8898574980&amp;hsa_cam=15312994475&amp;hsa_grp=132501526440&amp;hsa_ad=562694870067&amp;hsa_src=g&amp;hsa_tgt=kwd-1184507487030&amp;hsa_kw=what%20is%20cypress%20dashboard&amp;hsa_mt=e&amp;hsa_net=adwords&amp;hsa_ver=3&amp;gclid=Cj0KCQjwsdiTBhD5ARIsAIpW8CJJIHMmuX727CDNEgFF5EDCuDiN3jpmq7GZpukeOwBsTYHSnJ63hgsaAsFQEALw_wcB">cypress dashboard</a> 
+                        which helps with recording test runs, getting analytics about your 
+                        test performance, enabling parallel runs in CI/CD pipelines, etc.
+                        <br><br>
+                        Cypress is definitely my go-to for web test automation frameworks, but I'm open-minded and want to work with other options 
+                        so that I can make the best decision of framework depending on the application, not personal bias. It's with that in mind 
+                        that I worked to convert these scripts into playwright scripts, which I have never worked in before but was interested to 
+                        see how it compares and contrasts. But I do love working with Cypress and look forward to doing more with it as my career 
+                        continues.
+                    </p>
                   </div>
                 </div>
                 
@@ -165,7 +238,6 @@
           </div>
         </div>
       </div>
-      <div class="vertical-scrolling"></div>
     </div>
     <script>
       new fullpage("#fullpage", {
@@ -174,6 +246,7 @@
         navigation: true,
         slidesNavigation: true,
         parallax: true,
+        normalScrollElements: '.port-blog'
       });
     </script>
   </body>
