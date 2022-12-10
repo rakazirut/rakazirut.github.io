@@ -7,22 +7,22 @@
 h1 {
   color: #fff;
   text-align: left;
-  font-size: 5vw;
+  font-size: 8vw;
   margin-left: 200px;
 }
 
 h2 {
   color: #fff;
   text-align: left;
-  font-size: 2vw;
-  margin-left: 250px;
+  font-size: 5vw;
+  margin-left: 150px;
   margin-bottom: 75px;
 }
 
 h3 {
   color: #fff;
   text-align: left;
-  font-size: 1vw;
+  font-size: 3vw;
   margin-bottom: 10px;
 }
 
@@ -42,7 +42,7 @@ h3 {
   align-items: center;
   height: 150px;
   width: fit-content;
-  margin-left: 270px;
+  margin-left: 150px;
   margin-right: 200px;
   margin-bottom: 200px;
   margin-top: 120px;
@@ -78,7 +78,7 @@ a {
 p {
   color: #fff;
   text-align: left;
-  font-size: 1.2vw;
+  font-size: 2vw;
 }
 
 div#fp-nav a span {
@@ -127,13 +127,13 @@ div.fp-slidesNav a span {
 
 .port-blog{
   overflow-y: auto;
-  max-height: 500px;
+  max-height: 420px;
 }
 
 .port-blog-body{
   color: #fff;
   text-align: left;
-  font-size: .90vw;
+  font-size: 2vw;
 }
 
 .blog-image {
