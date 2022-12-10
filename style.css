@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0px;
+  font-family: "Fira Code", sans-serif;
+}
+
+h1 {
+  color: #fff;
+  text-align: left;
+  font-size: 5vw;
+  margin-left: 200px;
+}
+
+h2 {
+  color: #fff;
+  text-align: left;
+  font-size: 2vw;
+  margin-left: 200px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #fff;
+  text-align: left;
+  font-size: 1vw;
+  margin-bottom: 10px;
+}
+
+.bio-body, .port-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: fit-content;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.project-overview{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: fit-content;
+  margin-left: 200px;
+  margin-right: 200px;
+  color: #fff;
+}
+
+.footer{
+  position: fixed;
+  bottom: 5%;
+  width: 100%;
+}
+
+.slide-footer{
+  position: fixed;
+  bottom: 5%;
+  width: 50%;
+}
+
+.socials-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  margin: 1rem;
+}
+
+a {
+  color: #fff;
+  text-align: center;
+}
+
+p {
+  color: #fff;
+  text-align: left;
+  font-size: 1.2vw;
+}
+
+div#fp-nav a span {
+  background: rgb(255, 255, 255) !important;
+}
+
+div.fp-slidesNav a span {
+  background: rgb(255, 255, 255) !important;
+}
+
+.vertical-scrolling{
+  text-align:center;
+}
+
+.fp-controlArrow{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -45px;
+  width: 70px;
+  height: 90px;
+  z-index: 99;
+  background: 0 0;
+  border: 0;
+  outline: 0;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: 1;
+}  
+
+.flex-child:first-child {
+  margin-right: 20px;
+} 
+.flex-child:last-child {
+  margin-right: 100px;
+} 
+
+.port-blog{
+  overflow-y: auto;
+  max-height: 500px;
+}
+
+.port-blog-body{
+  color: #fff;
+  text-align: left;
+  font-size: .90vw;
+}

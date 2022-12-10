@@ -1,0 +1,22 @@
+{
+  "name": "rakazirut.github.io",
+  "version": "1.0.0",
+  "description": "Personal Github Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakazirut/rakazirut.github.io.git"
+  },
+  "author": "rk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rakazirut/rakazirut.github.io/issues"
+  },
+  "homepage": "https://github.com/rakazirut/rakazirut.github.io#readme",
+  "dependencies": {
+    "fullpage.js": "^4.0.15"
+  }
+}
