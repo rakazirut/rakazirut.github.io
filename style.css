@@ -98,6 +98,11 @@ h3 {
 
 .social-icon {
   margin: 1rem;
+  transition: transform .2s; /* Animation */
+}
+
+.social-icon:hover{
+  transform: scale(2);
 }
 
 a {
