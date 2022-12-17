@@ -12,6 +12,35 @@ h1 {
   margin-bottom: 20px;
 }
 
+.title-rob{
+  color:#323232;
+  -webkit-text-stroke: 0.2vw #fff;
+  position: relative;
+  width: fit-content;
+}
+
+.title-rob::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:0;
+  height:100%;
+  color:#fff;
+  -webkit-text-stroke: 0vw;
+  border-right: 2px solid #fff;
+  overflow: hidden;
+  animation: animate 8s linear 1s infinite running;
+}
+@keyframes animate {
+  0%,50%,100%{
+    width: 0;
+  }
+  70%,90%{
+    width: 100%;
+  }
+}
+
 h2 {
   color: #fff;
   text-align: left;
