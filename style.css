@@ -4,6 +4,10 @@
   font-family: "Fira Code", sans-serif;
 }
 
+/* html.fp-enabled body {
+  margin-top: 50px;
+} */
+
 h1 {
   color: #fff;
   text-align: left;
@@ -178,4 +182,26 @@ div.fp-slidesNav a span {
 .img-resp {
   width: 100%;
   height: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
