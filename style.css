@@ -82,6 +82,9 @@ h3 {
   margin-top: 60px;
   color: #fff;
 }
+.project-detail{
+  margin-top: 15px;
+}
 
 .footer{
   position: fixed;
@@ -167,6 +170,7 @@ div.fp-slidesNav a span {
 .port-blog{
   overflow-y: auto;
   max-height: 420px;
+  margin-top: 30px;
 }
 
 .port-blog-body{
