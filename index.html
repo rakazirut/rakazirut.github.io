@@ -1,400 +1,1136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Hi. I'm Rob.</title>
-    <link rel="icon" href="https://robertkazirut.com/wp-content/uploads/2021/09/cropped-logo1_blk-192x192.png" sizes="192x192" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&display=swap"
-      rel="stylesheet"
-    />
-    <!--FullPage Js-->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js"
-      integrity="sha512-HqbDsHIJoZ36Csd7NMupWFxC7e7aX2qm213sX+hirN+yEx/eUNlZrTWPs1dUQDEW4fMVkerv1PfMohR1WdFFJQ=="
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.css"
-      integrity="sha512-hGBKkjAVJUXoImyDezOKpzuY4LS1eTvJ4HTC/pbxn47x5zNzGA1vi3vFQhhOehWLTNHdn+2Yqh/IRNPw/8JF/A=="
-      crossorigin="anonymous"
-    />
-    <!--End FullPage Js-->
-  </head>
-  <body>
-    <div id="fullpage">
-      <div class="vertical-scrolling">
-        <h1 class="title-rob" data-text="Hi.&nbsp;I'm&nbsp;Rob.">Hi. I'm Rob.</h1>
-        <div class="bio-body">
-          <p class="bio-body-text">
-            I'm a passionate software test engineer with experience in
-            e-commerce, SaaS, and sUAV software domains. I'm an energetic,
-            quality-focused, collaborative professional who specializes in
-            creating and executing software test plans, identifying problems
-            with adverse impacts on the value of software projects, and quickly
-            communicating concerns to mitigate risks and minimize negative
-            client impact.
-          </p>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robert Kazirut - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar1.png" alt="Robert kazirut" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Robert Kazirut">Robert Kazirut</h1>
+
+          <p class="title">Software QA Automation Engineer</p>
         </div>
-        <div class="footer">
-            <div class="socials-footer">
-                <div class="social-icon">
-                    <a href="mailto:robert.kazirut@gmail.com" target="_blank"
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="#ffffff"
-                        width="30"
-                        height="30"
-                        viewBox="0 0 24 24"
-                      >
-                      <path d="M12.042 23.648c-7.813 0-12.042-4.876-12.042-11.171 0-6.727 4.762-12.125 13.276-12.125 6.214 0 10.724 4.038 10.724 9.601 0 8.712-10.33 11.012-9.812 6.042-.71 1.108-1.854 2.354-4.053 2.354-2.516 0-4.08-1.842-4.08-4.807 0-4.444 2.921-8.199 6.379-8.199 1.659 0 2.8.876 3.277 2.221l.464-1.632h2.338c-.244.832-2.321 8.527-2.321 8.527-.648 2.666 1.35 2.713 3.122 1.297 3.329-2.58 3.501-9.327-.998-12.141-4.821-2.891-15.795-1.102-15.795 8.693 0 5.611 3.95 9.381 9.829 9.381 3.436 0 5.542-.93 7.295-1.948l1.177 1.698c-1.711.966-4.461 2.209-8.78 2.209zm-2.344-14.305c-.715 1.34-1.177 3.076-1.177 4.424 0 3.61 3.522 3.633 5.252.239.712-1.394 1.171-3.171 1.171-4.529 0-2.917-3.495-3.434-5.246-.134z"/>
-                    </svg></a>
-                  </div>
-                <div class="social-icon">
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:robert.kazirut@gmail.com" class="contact-link">robert.kazirut@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+15863299536" class="contact-link">+1 (586) 329-9536</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">July 8, 1988</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Detroit, Michigan, USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/robert-kazirut/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/rakazirut" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item" hidden>
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item" hidden>
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a quality assurance automation engineer from Detroit, Michigan, working in web and application development.
+            I'm an advocate for software quality who loves to help others build and maintain software applications that deliver
+            quality and impactful interactions with user base.
+          </p>
+
+          <p>
+            I have recent experience in e-commerce, SaaS, and sUAV software domains. 
+            I'm an energetic, quality-focused, collaborative professional who specializes in creating and executing software test plans, 
+            identifying problems with adverse impacts on the value of software projects, and quickly communicating concerns to mitigate risks 
+            and minimize negative client impact.
+          </p>
+
+          <p>
+            I've built test automation solutions from the ground up. I've also done consulting to help teams with testing and automation.
+            My favorite languages are JavaScript and Python, and my favorite automation framework is Playwright, but I can quickly pick up anything.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Test Automation Design</h4>
+
+                <p class="service-item-text">
+                  High-quality, easy to use framework  design made at a professional level. Integrating automated test suites into CI/CD pipelines to frequently deliver working software to users.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web application testing</h4>
+
+                <p class="service-item-text">
+                  Driving the QA effort for significant release features via thorough test planning, test case execution, defect triage with stakeholders, and clear documentation.
+                </p>
+              </div>
+
+            </li>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
                   <a
-                    href="https://www.linkedin.com/in/robert-kazirut/"
-                    target="_blank"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="#ffffff"
-                      width="30"
-                      height="30"
-                      viewBox="0 0 24 24"
-                    >
-                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/>
-                </svg></a>
-                </div>
-                <div class="social-icon">
-                  <a href="https://github.com/rakazirut" target="_blank"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="#ffffff"
-                      width="30"
-                      height="30"
-                      viewBox="0 0 24 24"
-                    >
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg></a>
-                </div>
-              </div>
-        </div>
-      </div>
-      <div class="vertical-scrolling">
-        <h1 class="port-rob">Portfolio.</h1>
-        <div class="port-body">
-          <p class="port-body-text">
-            Inspired by a post by Angie Jones
-            <a href="https://techbeacon.com/app-dev-testing/10-portfolio-projects-aspiring-automation-engineers" target="_blank">
-            10 portfolio projects for aspiring test automation engineers</a>, 
-            I decided I should also create a portfolio of my work. 
-            <br><br>
-            Example projects can be found below.
-          </p>
-        </div>
-      </div>
-      <div class="vertical-scrolling">
-        <div class="slide" data-anchor="slide1">
-          <h1>Cypress Demo.</h1>
-          <div class="bio-body">
-            <p class="bio-body-text">
-              A demo of writing cypress test scripts covering scenarios on <a href="https://www.saucedemo.com/" target="_blank">www.saucedemo.com</a>. 
-              Also included is simple circle-ci
-              configuration for building on commit and also nightly via a
-              scheduled job, as well as a docker-compose file for building an
-              image and running this suite inside of a containerized
-              environment. 
-              <br><br>
-              See next slide for more information.
-            </p>
-          </div>
-        </div>
-        <div class="slide" data-anchor="slide2">
-            <div class="flex-container">
+                  href="https://www.linkedin.com/in/seamus-sloan-7bb00b149/"
+                  target="_blank"
+                  ><img src="./assets/images/icon-li.svg" alt="Seamus Sloan" width="60" data-testimonials-avatar></a>
+                </figure>
 
-                <div class="flex-child magenta">
-                    <h2>Overview</h2>
-                    <div class="project-overview">
-                      <p class="project-detail">
-                          <strong>Language:</strong> JavaScript, YAML
-                          <br>
-                          <strong>Runner:</strong> Cypress Runner
-                          <br>
-                          <strong>Source Control:</strong> Git, Github
-                          <br>
-                          <strong>CI/CD:</strong> <a href="https://circleci.com/gh/rakazirut/rk_cypress/tree/main"><img src="https://circleci.com/gh/rakazirut/rk_cypress.svg?style=shield&circle-token=ef935c1a1652cae540c3cf43c68318e2351c7cec"></a>
-                          <br>
-                          <strong>Site under test:</strong> <a href="https://www.saucedemo.com/" target="_blank">www.saucedemo.com</a>
-                          <br>
-                          <strong>Repository:</strong> <a href="https://github.com/rakazirut/rk_cypress" target="_blank"
-                          ><svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="#ffffff"
-                            width="30"
-                            height="30"
-                            viewBox="0 0 24 24"
-                          >
-                          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                      </svg></a>
-                      </p>
-                    </div>
-                </div>
-                
-                <div class="flex-child green">
-                  <div class="port-blog">
-                    <h3>Introduction</h3>
-                    <p class="port-blog-body">
-                        Cypress is one of the most popular end-to-end automation tools for web automation. 
-                        In my opinion, the tool is easy to pick up with lots of great documentation and community support. 
-                        Some of my favorite blogs for cypress support include:<br><br>
-                        <a href="https://www.cypress.io/blog/author/gleb/">Gleb Bahmutov Official Cypress.io blog</a><br>
-                        <a href="https://glebbahmutov.com/blog/tags/cypress/">Gleb Bahmutov Personal Cypress blog</a><br>
-                        <a href="https://discord.gg/wFhWsKXx7X">Cypress.io Community Official Discord Server</a><br>
-                        <a href="https://filiphric.com/blog">Filip Hric Cypress Blog</a><br><br>
-                        Honestly, there are so many cypress resources available online that it helps make the tool incredibly nice to work with. 
-                        I'm sure I've referenced other resources that I have neglected to mention here.
-                    </p>
-                    <br>
-                    <h3>Project</h3>
-                    <p class="port-blog-body">
-                        I have designed, developed and maintained automated test suites using Cypress before but in my opinion, 
-                        it is always valuable to empty our cup and start from the beginning to demonstrate and strengthen fundamental skills. 
-                        With that in mind I opted to automate a few scenarios using the website Swag Labs (saucedemo.com).
-                        SauceDemo is a sample website built by SauceLabs that allows users to practice browser automation.<br><br>
-                        The bulk of the project is designed around automating scenarios for SauceDemo and to that end I will focus on discussing those instead. 
-                        It's also worth noting that this project is very much a work in progress, there is a lot of scope to add new scenarios in the future. 
-                        Continued iteration is a healthy part of the development process and I expect I will continue to update the code and this post as time goes on.
-                    </p>
-                    <br>
-                    <h3>Getting Started</h3>
-                    <p class="port-blog-body">
-                        <a href="https://docs.cypress.io/guides/getting-started/installing-cypress#System-requirements">Installing Cypress</a> is 
-                        pretty straight forward. I'm using <a href="https://nodejs.org/en/">node.js</a> but opted to use 
-                        <a href="https://yarnpkg.com/">yarn</a> as the package manager versus <a href="https://www.npmjs.com/">npm</a>, 
-                        but there isn't a good reason for that aside from comfort level.
-                        <br><br>
-                        I wanted an XML report to be generated after test run completed, so I could import the results into a 
-                        <a href="https://www.testmo.com/">testmo</a> 
-                        account via their API. Unfortunately, my trial account to testmo has expired but you may still see the remnants 
-                        of the effort throughout the codebase. I felt that having the report generated was still extremely useful, 
-                        so instead I save it as an artifact I can easily reference within circle-ci after a job completes. 
-                        I referenced <a href="https://dzone.com/articles/7-easy-steps-to-generate-xml-and-html-reports-in-cypress">this article</a> 
-                        to get the reporting stood up very easily.
-                    </p>
-                    <br>
-                    <h3>Code</h3>
-                    <p class="port-blog-body">
-                        After installing cypress and other dependencies (that are needed for the aforementioned reporting), 
-                        it was time to get started. I prefer to keep locator values in a separate constants-like file for re-use, 
-                        as well as certain verbiage such as error messaging, things like that. This page object model approach helps 
-                        me and many others to keep the test scripts organized and easy to understand. See below an example of such a 
-                        constant file:<br><br>
-                        <script src="https://gist.github.com/rakazirut/cde3a5ba539aea5e325e2c2bfa3b2438.js"></script>
-                    </p>
-                    <p class="port-blog-body">
-                        From there, I went ahead and added some visual, happy path, and negative scenarios around logging in for the 
-                        SauceDemo webpage. This is just a demo website, so there isn't any network request after attempting to login 
-                        to intercept and verify, otherwise we'd have done that where appropriate.<br><br>
-                        After logging in, the user lands on the product inventory page. I began to add scenarios around this page as well, 
-                        but that is still a work in progress, along with checkout scenarios, etc. Click <a href="https://github.com/rakazirut/rk_cypress">here</a> 
-                        to view the codebase.
-                        <br><br> 
-                        The cypress runner offers the ability to run the test suite in the command line or via GUI. You could use the command 
-                        yarn cypress open or npx cypress open to open the cypress GUI, for example. You can select from the browsers versions 
-                        currently installed on the host machine (Chrome, Edge, Firefox, Electron). See below the login scenarios executing in 
-                        the GUI for Chrome browser.<br><br>
-                        <div class="blog-img">
-                            <img decoding="async" loading="lazy" class="img-resp" src="https://robertkazirut.com/wp-content/uploads/2022/05/2022-05-07-11-45-33-1.gif">
-                        </div>
-                    </p>
-                    <p class="port-blog-body">
-                        <br>
-                        Included in the codebase is a <a href="https://circleci.com/">circle-ci</a> YAML config to get the automation running 
-                        in a circle-ci CI/CD pipeline on 
-                        developer commits, as well as a daily build running on a scheduled cronjob. Admittedly, the config is pretty simple 
-                        compared to what might be needed for the business needs, but at least gives us some building blocks to work with, as 
-                        well as demonstrates the ability in principle.<br><br>
-                        I have also included a <a href="https://docs.docker.com/compose/">docker-compose</a> YAML config to containerize the 
-                        project. Docker is a set of platform-as-a-service 
-                        products that use OS-level virtualization to deliver software in packages called containers, and docker-compose is one 
-                        flavor of accomplishing the objective of containerizing the project. Assuming docker and docker-compose are installed on 
-                        the host machine, the user can simply provide the command docker-compose up cypress to create the cypress container and run 
-                        the suite in isolation.
-                    </p>
-                    <br>
-                    <h3>Conclusion</h3>
-                    <p class="port-blog-body">
-                        Today, Cypress is a popular choice for web test automation. And I certainly can see why. Installation is straight-forward, 
-                        getting a framework off the ground is easy, community support is incredible and passionate, and if you're organized you can 
-                        get testing scenarios stood up and ready to contribute to maintaining the quality of your application under test fairly 
-                        quickly. Not to mention the excellent 
-                        <a href="https://cypress.io/dashboard/?utm_adgroup=132501526440&amp;utm_keyword=what%20is%20cypress%20dashboard&amp;utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=15312994475&amp;utm_term=what%20is%20cypress%20dashboard&amp;hsa_acc=8898574980&amp;hsa_cam=15312994475&amp;hsa_grp=132501526440&amp;hsa_ad=562694870067&amp;hsa_src=g&amp;hsa_tgt=kwd-1184507487030&amp;hsa_kw=what%20is%20cypress%20dashboard&amp;hsa_mt=e&amp;hsa_net=adwords&amp;hsa_ver=3&amp;gclid=Cj0KCQjwsdiTBhD5ARIsAIpW8CJJIHMmuX727CDNEgFF5EDCuDiN3jpmq7GZpukeOwBsTYHSnJ63hgsaAsFQEALw_wcB">cypress dashboard</a> 
-                        which helps with recording test runs, getting analytics about your 
-                        test performance, enabling parallel runs in CI/CD pipelines, etc.
-                        <br><br>
-                        Cypress is definitely my go-to for web test automation frameworks, but I'm open-minded and want to work with other options 
-                        so that I can make the best decision of framework depending on the application, not personal bias. It's with that in mind 
-                        that I worked to convert these scripts into playwright scripts, which I have never worked in before but was interested to 
-                        see how it compares and contrasts. But I do love working with Cypress and look forward to doing more with it as my career 
-                        continues.
-                    </p>
-                  </div>
-                </div>
-                
-              </div>  
-        </div>
-      </div>
-      <div class="vertical-scrolling">
-        <div class="slide" data-anchor="slide1">
-            <h1>Postman Demo.</h1>
-            <div class="bio-body">
-              <p class="bio-body-text">
-                A demo of writing postman requests and test scripts using API endpoints available at 
-                <a href="https://jsonplaceholder.typicode.com ">https://jsonplaceholder.typicode.com</a>. 
-                Also included is simple circle-ci configuration for running on commit and also nightly via a scheduled job using Newman.
-                <br><br>
-                See next slide for more information.
-              </p>
-            </div>
-          </div>
-          <div class="slide" data-anchor="slide2">
-            <div class="flex-container">
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Seamus Sloan</h4>
 
-              <div class="flex-child magenta">
-                  <h2>Overview</h2>
-                  <div class="project-overview">
-                    <p class="project-detail">
-                        <strong>Language:</strong> JavaScript, YAML
-                        <br>
-                        <strong>Runner:</strong> Postman Runner
-                        <br>
-                        <strong>Test type:</strong> REST API Testing / Automation
-                        <br>
-                        <strong>API under test:</strong> <a href="https://jsonplaceholder.typicode.com/" target="_blank">jsonplaceholder.typicode.com/</a>
-                        <br>
-                        <strong>Repository:</strong> <a href="https://github.com/rakazirut/rk_cypress" target="_blank"
-                        ><svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="#ffffff"
-                          width="30"
-                          height="30"
-                          viewBox="0 0 24 24"
-                        >
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                    </svg></a>
-                    </p>
-                  </div>
-              </div>
-              
-              <div class="flex-child green">
-                <div class="port-blog">
-                  <h3>Introduction</h3>
-                  <p class="port-blog-body">
-                    Postman is my go-to for API testing and depending on your use case it can be a good option for API automated 
-                    testing as well. The Postman client makes it very easy for software engineers to create, share, test and 
-                    document APIs. In my opinion, the tool is easy to pick up with lots of great documentation and community 
-                    support. They've even partnered with Badgr to create the Student Program, which offers several trainings and 
-                    challenges to really help you to master the tool. I personally have completed the following Postman-Badgr 
-                    challenges:<br><br>
-                    <blockquote class="badgr-badge" style="font-family: Helvetica, Roboto, Segoe UI, Cacenteri, sans-serif;"><a href="https://api.badgr.io/public/assertions/qA4wCInTTQeCTUh4E12gFg?identity__email=robert.kazirut%40gmail.com"><img width="120px" height="120px" src="https://api.badgr.io/public/assertions/qA4wCInTTQeCTUh4E12gFg/image"></a><p class="badgr-badge-name" style="hyphens: auto; overflow-wrap: break-word; word-wrap: break-word; margin: 0; font-size: 16px; font-weight: 600; font-style: normal; font-stretch: normal; line-height: 1.25; letter-spacing: normal; text-align: center; color: #fff;">30 days of Postman - for developers</p><p class="badgr-badge-date" style="margin: 0; font-size: 12px; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: center; color: #fff;"><strong style="font-size: 12px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: center; color: #fff;">Awarded: </strong>Mar 8, 2022</p><p class="badgr-badge-recipient" style="margin: 0; font-size: 12px; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: center; color: #fff;"><strong style="font-size: 12px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: center; color: #fff;">Awarded To: </strong><span style="display: block;"> Robert Kazirut</span></p><script async="async" src="https://badgr.com/assets/widgets.bundle.js"></script></blockquote>
-                    <br>
-                    <blockquote class="badgr-badge" style="font-family: Helvetica, Roboto, Segoe UI, Calibri, sans-serif;"><a href="https://api.badgr.io/public/assertions/cS_HyaabQJi8IEUBvBOmrw?identity__email=robert.kazirut%40gmail.com"><img width="120px" height="120px" src="https://api.badgr.io/public/assertions/cS_HyaabQJi8IEUBvBOmrw/image"></a><p class="badgr-badge-name" style="hyphens: auto; overflow-wrap: break-word; word-wrap: break-word; margin: 0; font-size: 16px; font-weight: 600; font-style: normal; font-stretch: normal; line-height: 1.25; letter-spacing: normal; text-align: center; color: #fff;">Postman API Tester</p><p class="badgr-badge-date" style="margin: 0; font-size: 12px; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: center; color: #fff;"><strong style="font-size: 12px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: center; color: #fff;">Awarded: </strong>Feb 25, 2022</p><p class="badgr-badge-recipient" style="margin: 0; font-size: 12px; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: center; color: #fff;"><strong style="font-size: 12px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: center; color: #fff;">Awarded To: </strong><span style="display: block;"> Robert Kazirut</span></p><script async="async" src="https://badgr.com/assets/widgets.bundle.js"></script></blockquote>
-                    <br>
-                    <blockquote class="badgr-badge" style="font-family: Helvetica, Roboto, Segoe UI, Calibri, sans-serif;"><a href="https://api.badgr.io/public/assertions/fl4DgZf9TROgoRRfL9FdEA?identity__email=robert.kazirut%40gmail.com"><img width="120px" height="120px" src="https://api.badgr.io/public/assertions/fl4DgZf9TROgoRRfL9FdEA/image"></a><p class="badgr-badge-name" style="hyphens: auto; overflow-wrap: break-word; word-wrap: break-word; margin: 0; font-size: 16px; font-weight: 600; font-style: normal; font-stretch: normal; line-height: 1.25; letter-spacing: normal; text-align: center; color: #fff;">Postman APIs 101</p><p class="badgr-badge-date" style="margin: 0; font-size: 12px; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: center; color: #fff;"><strong style="font-size: 12px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: center; color: #fff;">Awarded: </strong>Apr 30, 2021</p><p class="badgr-badge-recipient" style="margin: 0; font-size: 12px; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: center; color: #fff;"><strong style="font-size: 12px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: center; color: #fff;">Awarded To: </strong><span style="display: block;"> Robert Kazirut</span></p><script async="async" src="https://badgr.com/assets/widgets.bundle.js"></script></blockquote>
-                    <br>
-                    <blockquote class="badgr-badge" style="font-family: Helvetica, Roboto, Segoe UI, Calibri, sans-serif;"><a href="https://api.badgr.io/public/assertions/HbP7XvcUQLq1CbfmFNxuJg?identity__email=robert.kazirut%40gmail.com"><img width="120px" height="120px" src="https://api.badgr.io/public/assertions/HbP7XvcUQLq1CbfmFNxuJg/image"></a><p class="badgr-badge-name" style="hyphens: auto; overflow-wrap: break-word; word-wrap: break-word; margin: 0; font-size: 16px; font-weight: 600; font-style: normal; font-stretch: normal; line-height: 1.25; letter-spacing: normal; text-align: center; color: #fff;">Postman API Fundamentals Student Expert</p><p class="badgr-badge-date" style="margin: 0; font-size: 12px; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: center; color: #fff;"><strong style="font-size: 12px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: center; color: #fff;">Awarded: </strong>Apr 29, 2021</p><p class="badgr-badge-recipient" style="margin: 0; font-size: 12px; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: center; color: #fff;"><strong style="font-size: 12px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: center; color: #fff;">Awarded To: </strong><span style="display: block;"> Robert Kazirut</span></p><script async="async" src="https://badgr.com/assets/widgets.bundle.js"></script></blockquote>
-                    <br>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Rob is an incredible engineer possessing two very rare traits: the ability to self-teach and patience. 
+                    I've watched Rob learn how to use a new tool or framework and become an expert in it within weeks then lead a 
+                    meeting explaining it to others in a way that anyone could understand. It's hard to imagine that there's anything 
+                    that Rob can't do without a little bit of time.
+                    <br><br>
+                    From having hour long conversations about architecting automated tests to new performance testing tools, I always value 
+                    Rob's insight and trust that I can work with him to achieve a perfect solution for any problem.
                   </p>
                 </div>
-              </div>
-              
-            </div> 
-          </div>
-      </div>
-      <div class="vertical-scrolling">
-        <div class="slide" data-anchor="slide1">
-            <h1>Playwright Demo.</h1>
-            <div class="bio-body">
-              <p class="bio-body-text">
-                A demo of writing codeceptjs-playwright test scripts covering scenarios on <a href="https://www.saucedemo.com/" target="_blank">www.saucedemo.com</a>. 
-                Also included is simple git actions workflow
-                configuration for building on push and pull request to main branch, as well as a docker-compose file for building an
-                image and running this suite inside of a containerized
-                environment. 
-                <br><br>
-                See next slide for more information.
-              </p>
-            </div>
-          </div>
-          <div class="slide" data-anchor="slide2">
-            <div class="flex-container">
 
-              <div class="flex-child magenta">
-                  <h2>Overview</h2>
-                  <div class="project-overview">
-                    <p class="project-detail">
-                        <strong>Language:</strong> Typescript, YAML
-                        <br>
-                        <strong>Runner:</strong> CodeceptJS
-                        <br>
-                        <strong>Source Control:</strong> Git, Github
-                        <br>
-                        <strong>CI/CD:</strong> <a href="https://github.com/rakazirut/rk-codecept-playwright/actions/workflows/node.js.yml"><img src="https://github.com/rakazirut/rk-codecept-playwright/actions/workflows/node.js.yml/badge.svg"></a>
-                        <br>
-                        <strong>Site under test:</strong> <a href="https://www.saucedemo.com/" target="_blank">www.saucedemo.com</a>
-                        <br>
-                        <strong>Repository:</strong> <a href="https://github.com/rakazirut/rk-codecept-playwright" target="_blank"
-                        ><svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="#ffffff"
-                          width="30"
-                          height="30"
-                          viewBox="0 0 24 24"
-                        >
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                    </svg></a>
-                    </p>
-                  </div>
               </div>
-              
-              <div class="flex-child green">
-                <div class="port-blog">
-                  <h3>Introduction</h3>
-                  <p class="port-blog-body">
-                      Coming soon...
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <a
+                  href="https://www.linkedin.com/in/courtney-anderson-clark/"
+                  target="_blank"
+                  ><img src="./assets/images/icon-li.svg" alt="Courtney Anderson-Clark" width="60" data-testimonials-avatar></a>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Courtney Anderson-Clark</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Since Rob joined Skyward as a Senior QA Automation Engineer, I've been so impressed with what he's brought to our team and our product. Rob is highly resourceful. 
+                    One of his best qualities is his go-getter attitude. He's both willing and able to accomplish complex tasks alone and with the group. 
+                    In addition, he communicates exceptionally well across cross-functional teams, roping in product, design, developers, and QA. 
+                    <br><br>
+                    Rob doesn't shy away from having difficult conversations when needed, especially when he finds a defect that he believes is 
+                    important to investigate further or that it is critical to find a fix. 
+                    <br><br>
+                    He is always willing to learn and take on new responsibilities. His persistent curiosity has led to Rob becoming very competent in Cypress 
+                    and Postman. Soon after starting at Skyward, Rob took responsibility as one of our automation leads, triaging daily runs, creating scripts 
+                    that enabled engineers faster time to test results, and writing some of our more challenging e2e feature implementations. 
+                    He quickly started training other associate QA engineers on the ins and outs of cloud test automation, performance, and API testing. 
+                    <br><br>
+                    Beyond his technical abilities, Rob listened to everyone. He always encouraged outside opinions from every person on the team. 
+                    Everyone has their way of tackling obstacles, and Rob wanted to hear them. He is truly a joy to work with.
+                    <br><br>
+                    By now, it's clear to me that Rob has become an integral part of the success of the Skyward Quality Team. 
+                    The software development process would suffer without his steady leadership, attention to detail, and willingness to learn and adapt.
                   </p>
                 </div>
+
               </div>
-          </div>
-      </div>
-    </div>
-      <div class="vertical-scrolling">
-        <div class="slide" data-anchor="slide1">
-            <h1>k6 Demo.</h1>
-            <div class="bio-body">
-              <p class="bio-body-text">
-                A demo of writing k6 requests and test scripts for load testing.
-                <br><br>
-                See next slide for more information.
-              </p>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
             </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Seamus Sloan</h4>
+
+              <div data-modal-text>
+                <p>
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+
+        <!--
+          - clients
+        -->
+
+        <!-- <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
           </div>
-          <div class="slide" data-anchor="slide2">
-            <h1>Coming soon...</h1>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Oakland University, Rochester, Michigan</h4>
+
+              <span>2016 — 2020</span>
+
+              <p class="timeline-text">
+                Bachelor of Science, Computer Science
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
           </div>
-      </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Quality Assurance Automation Engineer</h4>
+              <h5><a href="https://www.brandlive.com/" class="social-link" target="_blank">@Brandlive</a></h5><br>
+              <span>2022 — Present</span>
+
+              <p class="timeline-text">
+                • Designed, developed, and maintained an automated test suite for multiple web applications using Playwright and CodeceptJS.<br>
+                • Configured workflows for CI/CD incorporating automated tests utilizing Git Actions.<br>
+                • Performed API testing using Postman and Playwright.<br>
+                • Created scripts and performed performance and load testing using Artillery.io.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Quality Assurance Automation Engineer</h4>
+              <h5><a href="https://www.riis.com/" class="social-link" target="_blank">@Riis</a></h5><br>
+
+              <span>2021 — 2022</span>
+
+              <p class="timeline-text">
+                • Designed, developed, and maintained an automated test suite for a web application using Cypress.<br>
+                • Created API testing collections for integration testing of Verizon's connected live video services using Postman.<br>
+                • Triaged defects with relevant project stakeholders to assign the proper priority and severity.<br>
+                • Coordinated with developers and product managers to shift left and start early in ensuring quality for features in development.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Quality Assurance Engineer</h4>
+              <h5><a href="https://www.ilitchholdings.com/index.html" class="social-link" target="_blank">@Ilitch Holdings</a></h5><br>
+
+              <span>2019 — 2021</span>
+
+              <p class="timeline-text">
+                • Collaborated with developers, business analysts, and product owners to develop and execute test plans.<br>
+                • Verified test cases and plans covered proper functionality per functional and/or regression testing.<br>
+                • Performed API testing to verify expectations for functionality, reliability, and performance using Postman.<br>
+                • Created automated testing scripts for regression testing of web applications using Cypress.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Test Automation</h5>
+                <!-- <data value="90">90%</data> -->
+              </div>
+
+              <!-- <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div> -->
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Playwright</h5>
+                <!-- <data value="80">80%</data> -->
+              </div>
+
+              <!-- <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div> -->
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Cypress</h5>
+                <!-- <data value="70">70%</data> -->
+              </div>
+
+              <!-- <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div> -->
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">JavaScript</h5>
+                <!-- <data value="60">60%</data> -->
+              </div>
+
+              <!-- <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div> -->
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">TypeScript</h5>
+                <!-- <data value="60">60%</data> -->
+              </div>
+
+              <!-- <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div> -->
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <!-- <data value="50">50%</data> -->
+              </div>
+
+              <!-- <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div> -->
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Automation</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Automation</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="automation">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="automation">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="automation">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d188705.00784744413!2d-83.2640133944469!3d42.35284672960153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824ca0110cb1d75%3A0x5776864e35b9c4d2!2sDetroit%2C%20MI!5e0!3m2!1sen!2sus!4v1699040529002!5m2!1sen!2sus" 
+            width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
     </div>
-    <script>
-      new fullpage("#fullpage", {
-        sectionsColor: ["#323232", "#323232", "#323232", "#323232", "#323232", "#323232"],
-        sectionSelector: ".vertical-scrolling",
-        navigation: true,
-        slidesNavigation: false,
-        parallax: true,
-        normalScrollElements: '.port-blog',
-        // navigationTooltips: ['Home', 'Portfolio', 'Cypress', 'Postman', 'Playwright', 'k6'],
-      });
-    </script>
-  </body>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
