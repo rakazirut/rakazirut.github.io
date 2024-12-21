@@ -1,0 +1,16 @@
+<li class="timeline-item">
+  <h4 class="h4 timeline-item-title">{{ experience.title }}</h4>
+  <p>
+    <a [href]="experience.href" target="_blank"
+      ><span>{{ experience.company }}</span></a
+    >
+  </p>
+  <span>{{ experience.date }}</span>
+
+  <p class="timeline-text">
+    @for(desc of experience.desc; track desc){
+    {{ desc }}
+    <br />
+    }
+  </p>
+</li>

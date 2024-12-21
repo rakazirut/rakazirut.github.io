@@ -1,0 +1,57 @@
+<div class="content-container">
+  <div class="d-flex flex-row">
+    <div class="d-flex flex-column flex-grow-1">
+      <div class="d-flex flex-row" style="margin-bottom: 30px"></div>
+    </div>
+    <div class="d-flex flex-column">
+      <div
+        class="d-flex flex-row justify-content-end align-items-center link-options"
+      >
+        <div
+          class="mx-2 link-opt"
+          [ngClass]="selected == 'about' ? 'link-opt-selected' : ''"
+          (click)="onSelect('about')"
+        >
+          About Me
+        </div>
+        <div
+          class="mx-2 link-opt"
+          [ngClass]="selected == 'resume' ? 'link-opt-selected' : ''"
+          (click)="onSelect('resume')"
+        >
+          Resume
+        </div>
+        <div
+          class="mx-2 link-opt"
+          [ngClass]="selected == 'project' ? 'link-opt-selected' : ''"
+          (click)="onSelect('project')"
+          [hidden]="true"
+        >
+          Projects
+        </div>
+        <div
+          class="mx-2 link-opt"
+          [ngClass]="selected == 'contact' ? 'link-opt-selected' : ''"
+          (click)="onSelect('contact')"
+          [hidden]="true"
+        >
+          Contact
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content-area-dynamic">
+    @switch(selected){ @case ('about') {
+    <span class="title">Hi, I'm Rob</span>
+    <app-about-me></app-about-me>
+    } @case ('resume') {
+    <span class="title">Resume</span>
+    <app-resume-section></app-resume-section>
+    } @case ('project') {
+    <span class="title">Projects</span>
+    } @case ('contact') {
+    <span class="title">Contact</span>
+    <app-contact-section></app-contact-section>
+    } }
+  </div>
+</div>

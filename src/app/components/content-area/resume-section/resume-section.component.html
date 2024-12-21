@@ -1,0 +1,49 @@
+<article style="margin-top: 20px; margin-left: 20px">
+  <section class="timeline">
+    <div class="title-wrapper align-items-center">
+      <div class="icon-box">
+        <span class="material-icons-outlined info-icon"> list </span>
+      </div>
+      <div class="d-flex flex-column flex-grow-1">
+        <span class="title-exp">Experience</span>
+      </div>
+      <div class="d-flex flex-row">
+        <button (click)="download()">
+          <div class="d-flex flex-row align-items-center">
+            <span
+              class="material-icons-outlined info-icon-mini align-content-center"
+            >
+              file_download </span
+            >
+            <span class="button-text">Download Resume</span>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <ol class="timeline-list">
+      @for(experience of experienceArray; track experience){
+      <app-experience-item [experience]="experience"></app-experience-item>
+      }
+    </ol>
+  </section>
+
+  <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <span class="material-icons-outlined info-icon"> bookmark </span>
+      </div>
+      <span class="title-exp">Education</span>
+    </div>
+
+    <ol class="timeline-list">
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">
+          Bachelor of Science, Computer Science
+        </h4>
+
+        <p class="timeline-text">Oakland University, Rochester, Michigan</p>
+      </li>
+    </ol>
+  </section>
+</article>

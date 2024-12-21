@@ -1,0 +1,12 @@
+<main>
+  <div class="d-flex flex-column">
+    <app-sidebar
+      [selected]="selected"
+      (locationSelected)="selected = $event"
+    ></app-sidebar>
+    <app-content-area
+      [selected]="selected"
+      (contentSelected)="selected = $event"
+    ></app-content-area>
+  </div>
+</main>
