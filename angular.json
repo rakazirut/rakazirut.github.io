@@ -118,6 +118,9 @@
               "browserTarget": "rakazirut.github.io:build:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
