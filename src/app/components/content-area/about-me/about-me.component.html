@@ -1,0 +1,45 @@
+<div class="inner-content-container" style="margin-top: 20px">
+  <div class="d-flex flex-row">
+    <section class="about-text">
+      @for (about of aboutTextArray.slice(0, visibleCount); track $index) {
+      <p [innerHTML]="about"></p>
+      }
+      <!-- View More button -->
+      <div class="d-flex flex-row justify-content-center">
+        @if(visibleCount < aboutTextArray.length){
+        <button (click)="showAll()">
+          <div class="d-flex flex-row align-items-center">
+            <span
+              class="material-icons-outlined info-icon-mini align-content-center"
+            >
+              expand_more </span
+            >View More
+          </div>
+        </button>
+        } @else {
+                <button (click)="showLess()">
+          <div class="d-flex flex-row align-items-center">
+            <span
+              class="material-icons-outlined info-icon-mini align-content-center"
+            >
+              expand_less </span
+            >View Less
+          </div>
+        </button>
+        }
+      </div>
+    </section>
+  </div>
+  <div class="d-flex flex-row">
+    <span class="inner-title">What I'm Doing</span>
+  </div>
+  <div class="about-grid">
+    @for(doing of whatDoArray; track doing){
+    <app-doing-card
+      [icon]="doing.icon"
+      [title]="doing.title"
+      [desc]="doing.desc"
+    ></app-doing-card>
+    }
+  </div>
+</div>

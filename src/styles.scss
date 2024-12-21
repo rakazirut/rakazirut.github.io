@@ -1,0 +1,176 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "bootstrap/scss/bootstrap";
+@import "material-icons/iconfont/material-icons.css";
+
+.modern-ink {
+  --body-color: #ffffff; //bg
+  --icon-color: #851600; //main
+  --icon-color-mini: #565656; //caret
+  --border-color: #e6e6e6; //sub-alt but brighter
+  --container-color: #ececec; // sub-alt
+  --font-color: #000000; //text
+  --light-gray: #353535; //error
+  --light-gray-70: #5f5f5f; //error-extra
+}
+
+.cheesecake {
+  //Cheesecake
+  --body-color: #fdf0d5; //bg
+  --icon-color: #8e2949; //main
+  --icon-color-mini: #892948; //caret
+  --border-color: #e3afca; //sub-alt but brighter
+  --container-color: #f3e2bf; // sub-alt
+  --font-color: #3a3335; //text
+  --light-gray: #892948; //error
+  --light-gray-70: #f7f7f7; //error-extra
+}
+
+.retro {
+  //Retro
+  --body-color: #dad3c1; //bg
+  --icon-color: #493537; //main
+  --icon-color-mini: #493537; //caret
+  --border-color: #bfb8a5; //sub-alt but brighter
+  --container-color: #c8c3b3; // sub-alt
+  --font-color: #1d1b17; //text
+  --light-gray: #493537; //error
+  --light-gray-70: #433a3a; //error-extra
+}
+
+.cupcake {
+  //Cupcake
+  --body-color: #c7c7c7; //bg
+  --icon-color: #5ed5f3; //main
+  --icon-color-mini: #5ed5f3; //caret
+  --border-color: #303030; //sub-alt but brighter
+  --container-color: #ffffff; // sub-alt
+  --font-color: #ee66af; //text
+  --light-gray: #5ed5f3; //error
+  --light-gray-70: #ee66af; //error-extra
+}
+
+.sonaki {
+  // //Sonaki
+  --body-color: #2c2e34; //bg
+  --icon-color: #9ed072; //main
+  --icon-color-mini: #f38c71; //caret
+  --border-color: #636573; //sub-alt but brighter
+  --container-color: #232429; // sub-alt
+  --font-color: #e2e2e3; //text
+  --light-gray: #cbcbcb; //error
+  --light-gray-70: #b4b4b4; //error-extra
+}
+
+.superuser {
+  //Superuser
+  --body-color: #262a33; //bg
+  --icon-color: #43ffaf; //main
+  --icon-color-mini: #43ffaf; //caret
+  --border-color: #545f79; //sub-alt but brighter
+  --container-color: #1f232c; // sub-alt
+  --font-color: #e5f7ef; //text
+  --light-gray: #bac9c2; //error
+  --light-gray-70: #e5f7ef; //error-extra
+}
+
+.snes {
+  //SNES
+  --body-color: #b5b0c2; // sub-alt
+  --icon-color: #553d94; //main
+  --icon-color-mini: #523793; //caret
+  --border-color: #ada8ba; //sub-alt but brighter
+  --container-color: #bfbec2; //bg
+  --font-color: #2e2e2e; //text
+  --light-gray: #454545; //error
+  --light-gray-70: #676767; //error-extra
+}
+
+:root {
+  --body-color: #2c2e34; //bg
+  --icon-color: #9ed072; //main
+  --icon-color-mini: #f38c71; //caret
+  --border-color: #636573; //sub-alt but brighter
+  --container-color: #232429; // sub-alt
+  --font-color: #e2e2e3; //text
+  --light-gray: #cbcbcb; //error
+  --light-gray-70: #b4b4b4; //error-extra
+
+  /* font-size */
+  --fs-1: 24px;
+  --fs-2: 18px;
+  --fs-3: 17px;
+  --fs-4: 16px;
+  --fs-5: 15px;
+  --fs-6: 14px;
+  --fs-7: 13px;
+  --fs-8: 11px;
+
+  /* font-weight */
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--font-color);
+  font-family: "Roboto Mono", "Roboto Mono", "Vazirmatn", monospace;
+  // font-family: 'Poppins', sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.info-icon {
+  color: var(--icon-color);
+  transition: color 0.5s;
+  font-size: 40px;
+}
+
+.info-icon-mini {
+  color: var(--icon-color-mini);
+  transition: color 0.5s;
+  font-size: 20px;
+  transition: font-size 0.5s;
+  &:hover {
+    color: var(--font-color);
+    cursor: pointer;
+    font-size: 30px;
+    transition: font-size 0.5s;
+  }
+}
+
+svg {
+  width: 40px;
+  height: 40px;
+  transition: fill 0.5s;
+  fill: var(--icon-color);
+}
+
+@media (max-width: 965px) {
+  main {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+button {
+  margin-bottom: 10px;
+  background-color: var(--body-color);
+  color: var(--font-color);
+  padding: 5px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--border-color);
+  }
+}
