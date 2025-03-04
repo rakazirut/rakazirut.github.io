@@ -1,41 +1,43 @@
-import { Component, Output, EventEmitter, Input } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { MatIconModule } from '@angular/material/icon';
-import { ContactInfoJson, TitleArray } from '../../data/data-source';
+import { Component, Output, EventEmitter, Input } from "@angular/core";
+import { FormsModule } from "@angular/forms";
+import { MatIconModule } from "@angular/material/icon";
+import { ContactInfoJson, TitleArray } from "../../data/data-source";
 
 @Component({
-  selector: 'app-sidebar',
+  selector: "app-sidebar",
   standalone: true,
   imports: [MatIconModule, FormsModule],
-  templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.scss',
+  templateUrl: "./sidebar.component.html",
+  styleUrl: "./sidebar.component.scss",
 })
 export class SidebarComponent {
   @Input({ required: true }) selected!: string;
   @Output() locationSelected = new EventEmitter<string>();
 
   themes: string[] = [
-    'cheesecake',
-    'cupcake',
-    'modern-ink',
-    'snes',
-    'sonaki',
-    'superuser',
-    'retro',
+    "cheesecake",
+    "cupcake",
+    "modern-ink",
+    "snes",
+    "sonaki",
+    "superuser",
+    "retro",
   ];
-
-  ngOnInit(): void {
-    this.updateClock();
-    setInterval(() => this.updateClock(), 1000); // Update every second
-    setInterval(() => this.updateTitle(), 60000); // Update every minute
-  }
 
   showDebug = false;
   showTheme = false;
-  title = 'Software Engineer';
-  time: string = '';
-  selectedTheme = 'sonaki';
+  title = "";
+  time: string = "";
+  selectedTheme = "";
   hoveredTheme: string | null = null;
+
+  ngOnInit(): void {
+    this.updateClock();
+    this.setInitTitle();
+    this.setInitTheme();
+    setInterval(() => this.updateClock(), 1000); // Update every second
+    setInterval(() => this.updateTitle(), 60000); // Update every minute
+  }
 
   get name() {
     return ContactInfoJson.name;
@@ -70,17 +72,17 @@ export class SidebarComponent {
   }
 
   passLocation() {
-    this.selected = 'contact';
+    this.selected = "contact";
     this.locationSelected.emit(this.selected);
   }
 
   updateClock(): void {
     const now = new Date();
-    this.time = new Intl.DateTimeFormat('en-US', {
-      hour: '2-digit',
-      minute: '2-digit',
-      second: '2-digit',
-      timeZone: 'UTC',
+    this.time = new Intl.DateTimeFormat("en-US", {
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      timeZone: "UTC",
       hour12: false,
     }).format(now);
   }
@@ -94,6 +96,7 @@ export class SidebarComponent {
     const selectedValue = (event.target as HTMLSelectElement)?.value;
     document.body.className = selectedValue;
     this.selectedTheme = selectedValue;
+    localStorage.setItem("theme", selectedValue);
   }
 
   onOptionHover(theme: string): void {
@@ -101,6 +104,15 @@ export class SidebarComponent {
   }
 
   onOptionLeave(): void {
-    this.selectedTheme = 'sonaki';
+    this.selectedTheme = "superuser";
+  }
+
+  setInitTheme(): void {
+    this.selectedTheme = localStorage.getItem("theme") || "superuser";
+    document.body.className = this.selectedTheme;
+  }
+
+  setInitTitle(): void {
+    this.title = TitleArray[Math.floor(Math.random() * TitleArray.length)];
   }
 }
